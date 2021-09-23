@@ -50,16 +50,14 @@ body{
 }
 .what_image{
     flex: 0 0 430px;
-    
 }
 .what_image img{
     max-width: 100%;
-    
 }
 .what_row{
     display: flex;
     margin-top: 50px;
-    
+    justify-content: center;
 }
 .what_body{
     flex: 1 1 auto;
@@ -99,6 +97,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     margin: 0px -8px;
+    justify-content: center;
 }
 .item_row{
     display: flex;
@@ -135,13 +134,13 @@ body{
     display: flex;
     margin: 0px -22.5px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .vertical_collum{
     flex: 0 1 32%;
     padding: 0px 22.5px;
     display: flex;
     margin-bottom: 30px;
-
 }
 .vertical_item{
     background-color: #445162;
@@ -196,11 +195,11 @@ body{
     border: 1px solid #445161;
     border-radius: 5px;
 }
-  
-  
-  
-
-
+.vertical_button:active{
+    transform: scale(1.1);
+    transition: 0.4s;
+    background-color: aqua;
+}
 
 
 .footer{
@@ -217,4 +216,41 @@ body{
     color: #445162;
     font-size: 12px;
     letter-spacing: 0.3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 800px){
+    .what_row{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .what_image{
+        flex: 0 0 200px;
+        min-width: 430px;
+    }
+    .hi_row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .hi_body{
+        order: 2;
+    }
+    .hi_image{
+        order: 1;
+        margin-bottom: 50px;
+    }
 }
